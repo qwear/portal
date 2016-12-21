@@ -88,11 +88,11 @@ body{
 }
 .soc i{
     font-size:17px;
-    color: #00aee1;
+    color: #DADDDF;
 
 }
 .soc i:hover{
-    color: #0086AF;
+    color: #258DDD;
     -webkit-transition:  all 0.5s ease;-moz-transition:  all 0.5s ease;-o-transition:  all 0.5s ease;transition:  all 0.5s ease;
 }
 .wrap_search {
@@ -133,11 +133,11 @@ body{
 .right_head a {
     display: inline-block;
     vertical-align: top;
-    color: #000000;
+    color: #DADDDF;
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    background-color: #FFF;
+    background-color: transparent;
     line-height: 16px;
     padding: 8px 16px 8px 59px;
     border-radius: 12px;
@@ -145,7 +145,8 @@ body{
     margin-top: 9px;
     position: relative;
     width: 30%;
-    border: 1px solid white;
+    border: 1px solid #DADDDF;
+    transition: 0.5s;
 }
 .zayav:before{
     content: '';
@@ -506,6 +507,10 @@ body{
     margin: 0 auto;
     margin-top: 50px;
 }
+.wrap_hands span:hover{
+    background-color: rgb(0,174,225);
+    transition: 0.5s;
+}
 .wrap_hands span {
     background-color: rgba(0,174,225,.6);
     display: block;
@@ -520,6 +525,7 @@ body{
     margin: 0 auto;
     margin-top: 14px;
     padding-top: 27px;
+    transition: 0.5s;
 }
 .margin{
     margin-bottom: 15px;
@@ -1402,10 +1408,10 @@ input[type=range]::-ms-thumb {
     cursor: pointer;
 }
 .right_head a:hover{
-    background: #f5f5f5;
-    border:1px solid #818181;
+    background: #258DDD;
+    border:1px solid #258DDD;
     transition: 0.5s;
-    transform: 0.5s;
+    transition: 0.5s;
 }
 .wrap_select .col-md-4 span{
     font-size: 14px;
