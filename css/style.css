@@ -88,11 +88,11 @@ body{
 }
 .soc i{
     font-size:17px;
-    color: #DADDDF;
+    color: white;
 
 }
 .soc i:hover{
-    color: #258DDD;
+    color: #2497E3;
     -webkit-transition:  all 0.5s ease;-moz-transition:  all 0.5s ease;-o-transition:  all 0.5s ease;transition:  all 0.5s ease;
 }
 .wrap_search {
@@ -133,10 +133,10 @@ body{
 .right_head a {
     display: inline-block;
     vertical-align: top;
-    color: #DADDDF;
+    color: white;
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     background-color: transparent;
     line-height: 16px;
     padding: 8px 16px 8px 59px;
@@ -190,7 +190,7 @@ body{
     vertical-align: top;
 }
 .slogan p {
-    color: #00aee1;
+    color: #004472;
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
@@ -226,7 +226,7 @@ body{
     margin-left: 14px;
 }
 .phones p{
-    color: #00aee1;
+    color: #004472;
     font-size:22px;
     font-weight:600;
 }
@@ -357,7 +357,7 @@ body{
     margin-right: 60px;
 }
 .zag a,.zag{
-    color: #00aee1;
+    color: #004472;
     font-size: 22px;
     text-align: center;
     font-weight: 600;
@@ -379,7 +379,7 @@ body{
     width: 236px;
 }
 .describe_g span{
-    color: #00aee1;
+    color: #004472;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -396,7 +396,7 @@ body{
 }
 .read_more{
     display: block;
-    color: #00aee1;
+    color: #004472;
     font-size: 14px;
     font-weight: 300;
 }
@@ -415,12 +415,12 @@ body{
     font-size: 14px;
     display: inline-block;
     vertical-align: top;
-    border-bottom: 1px solid #00aee1;
+    border-bottom: 1px solid #004472;
     margin-bottom: 16px;
 }
 .central_work .tabs .active {
     border: 0!important;
-    color: #00aee1;
+    color: #004472;
     font-size: 14px;
     font-weight: 600;
     display: inline-block;
@@ -508,11 +508,11 @@ body{
     margin-top: 50px;
 }
 .wrap_hands span:hover{
-    background-color: rgb(0,174,225);
+    background-color: rgb(0,68,114);
     transition: 0.5s;
 }
 .wrap_hands span {
-    background-color: rgba(0,174,225,.6);
+    background-color: rgba(0,68,114,.6);
     display: block;
     color: #ffffff;
     font-size: 18px;
@@ -587,7 +587,7 @@ body{
     font-size: 13px;
     width: 140px;
     line-height: 25px;
-    background-color: rgba(0,174,225,.6);
+    background-color: rgba(0,68,114,.6);
     text-align: center;
 }
 .news:hover .name_news {
@@ -601,8 +601,9 @@ body{
 }
 .footer{
     margin-top: 21px;
-    background-color: #E3E3E3;
+    background-color: #004472;
     padding: 10px 0;
+
 }
 .footer > div {
     overflow: hidden;
@@ -620,7 +621,7 @@ body{
 }
 .f_slogan {
     float: left;
-    color: #333333;
+    color: #DADDDF;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -642,25 +643,25 @@ body{
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    color: #333333;
+    color: #DADDDF;
     text-transform: uppercase;
     font-weight: 600;
     margin-right: 30px;
     transition: 0.5s;
 }
 .f_nav li a:hover{
-    color: #00aee1;
+    color: #004472;
     transition: 0.5s;
 }
 .copy {
     float: right;
-    color: #333333;
+    color: #DADDDF;
     font-size: 14px;
     line-height: 20px;
     padding-top: 16px;
 }
 .block5{
-    background-color: #00aee1;
+    background-color: #004472;
     font-size: 0;
 }
 .zag_gamb{
@@ -702,11 +703,12 @@ body{
     transition: 0.5s;
 }
 .bread_nav li a:hover{
-    background: #3893BE;
+    background: #2497E3;
     transition: 0.5s;
 }
 .bread_nav .zactive_bread a{
-    font-weight: 600;
+    font-weight: ;
+    color: #ffffff;
 }
 .bread_nav {
     float: right;
@@ -757,7 +759,7 @@ ul.tabs li.active {
 }
 a.all{
     font-size: 14px;
-    color: #00aee1;
+    color: #004472;
 }
 a.all:hover{
     text-decoration: underline;
@@ -852,7 +854,7 @@ a.all:hover{
 }
 
 .block7 h3{
-    color: #00aee1;
+    color: #004472;
     font-size: 22px;
     text-transform: uppercase;
     font-weight: 600;margin-bottom: 12px;
@@ -897,7 +899,7 @@ a.all:hover{
     display: block;
     color: #033333;
     font-size: 14px;
-    border: 1px solid #00aee1;
+    border: 1px solid #004472;
     border-radius: 4px;
     width: 158px;
     height: 28px;
@@ -905,7 +907,7 @@ a.all:hover{
     text-align: center;
 }
 .send:hover{
-    background-color: #00aee1;
+    background-color: #004472;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -936,9 +938,9 @@ a.all:hover{
     transition: 0.5s;
 }
 .nav li a:hover{
-    background:#00aee1;
+    background:#004472;
     color: white;
-    border-color: #00aee1;
+    border-color: #004472;
     transition: 0.5s;
 }
 .wrap_cont{
@@ -950,7 +952,7 @@ a.all:hover{
     width: 719px;
 }
 .left_cont h3{
-    color: #00aee1;
+    color: #004472;
     font-size: 22px;
     font-weight: 600;
     padding-bottom: 30px;
@@ -972,7 +974,7 @@ a.all:hover{
     margin-bottom: 7px;
 }
 .left_b span{
-    color: #00aee1;
+    color: #004472;
     font-size: 18px;
     font-weight: 600;
 }
@@ -980,7 +982,7 @@ a.all:hover{
     color: #033333;
     font-size: 14px;
     display: block;
-    border: 1px solid #00aee1;
+    border: 1px solid #004472;
     border-radius: 4px;
     text-align: center;
     line-height: 28px;
@@ -989,7 +991,7 @@ a.all:hover{
     transition: 0.5s;
 }
 .show_map:hover{
-    background: #00aee1;
+    background: #004472;
     color: white;
     transition: 0.5s;
 }
@@ -1026,7 +1028,7 @@ a.all:hover{
     padding-top: 21px;
 }
 .right_b h4{
-    color: #00aee1;
+    color: #004472;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0px;
@@ -1040,7 +1042,7 @@ a.all:hover{
 .right_b span,.left_cont span.big_blue{
     font-size: 18px;
     line-height: 25px;
-    color: #00aee1;
+    color: #004472;
     display: block;
 }
 .right_cont{
@@ -1049,7 +1051,7 @@ a.all:hover{
 }
 .left_cont h3.heading{
     background: transparent;
-    color: #00aee1;
+    color: #004472;
     padding-left: 0px;
     font-size: 22px;margin-bottom: 10px;
 }
@@ -1086,14 +1088,14 @@ a.all:hover{
 .left_cont main .table span.blue_mini{
     font-weight: normal;
     font-size: 16px;
-    color: #00aee1;
+    color: #004472;
 }
 .left_cont h3.silver{
     background: #eeeeee;
     color: black;
 }
 .right_cont h3,.left_cont h3{
-    background: #00aee1;
+    background: #004472;
     font-size: 18px;
     font-weight: 600;
     padding: 10px;
@@ -1120,7 +1122,7 @@ a.all:hover{
     font-family: 'open sans', sans-serif;
 }
 .left_cont main .width{
-    color: #00aee1;
+    color: #004472;
     font-size: 18px;
     font-weight: 900;
     width: 170px;
@@ -1128,7 +1130,7 @@ a.all:hover{
     height: 40px;
 }
 .left_cont main span.blue{
-    color: #00aee1;
+    color: #004472;
     font-weight: bold;
 }
 .left_cont main .width1{
@@ -1142,7 +1144,7 @@ a.all:hover{
     padding-bottom: 5px;
 }
 .right_cont span{
-    color: #00aee1;
+    color: #004472;
     font-size: 22px;
     font-weight: 600;
     display: block;
@@ -1151,7 +1153,7 @@ a.all:hover{
     clear: both;
 }
 .head_coast h3{
-    color: #00aee1;
+    color: #004472;
     font-size: 22px;
     font-weight: 600;
     padding-bottom: 15px;
@@ -1181,7 +1183,7 @@ a.all:hover{
     text-align: center;
 }
 span.green{
-    color: #10bd51;
+    color: #2497E3;
     font-size: 22px;
     font-weight: 900;
 }
@@ -1196,13 +1198,13 @@ span.green{
     margin-right: 30px;
 }
 .double_txt span{
-    color: #00aee1;
+    color: #004472;
     font-size: 16px;
     display: block;
     padding-bottom: 7px;
 }
 .green{
-    color: #10bd51;
+    color: #2497E3;
 
 }
 .double_txt{
@@ -1415,7 +1417,7 @@ input[type=range]::-ms-thumb {
 }
 .wrap_select .col-md-4 span{
     font-size: 14px;
-    display: block;color:#00aee1;
+    display: block;color:#004472;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -1455,7 +1457,7 @@ input[type=range]::-ms-thumb {
 }
 a.blue-button{
     padding: 10px 40px;
-    background: #00aee1;
+    background: #004472;
     display: block;float: right;
     font-size: 14px;
     color: #ffffff;
@@ -1465,8 +1467,8 @@ a.blue-button{
     border: 1px solid transparent;
 }
 a.blue-button:hover{
-    border: 1px solid  #00aee1;
-    color:  #00aee1;
+    border: 1px solid  #004472;
+    color:  #004472;
     background: transparent;
     transition: 0.5s;
 }
@@ -1488,7 +1490,7 @@ a.blue-button:hover{
     color: #333;
 }
 .list .pagination a.active{
-    background: #00aee1;
+    background: #004472;
     color: white;
 }
 .project_heading a.blue-button{
