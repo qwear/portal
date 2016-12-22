@@ -1,4 +1,4 @@
-(function() {
+function() {
 
     var parent = document.querySelector(".select1");
 
