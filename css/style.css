@@ -1948,7 +1948,7 @@ a.blue-button:hover{
     }
     .copy {
         float: left;
-        color: #333333;
+
         font-size: 14px;
         line-height: 20px;
         padding-top: 16px;
@@ -2098,7 +2098,7 @@ a.blue-button:hover{
     }
     .copy {
         float: none;
-        color: #333333;
+
         font-size: 14px;
         line-height: 20px;
         padding-top: 16px;
@@ -2317,7 +2317,7 @@ a.blue-button:hover{
     }
     .copy {
         float: none;
-        color: #333333;
+
         font-size: 14px;
         line-height: 20px;
         padding-top: 16px;
