@@ -150,21 +150,25 @@ body{
 }
 .zayav:before{
     content: '';
+    fill: #ffb600;
     position: absolute;
     left: 26px;
     top: 12px;
-    background: url("../img/zay.png") no-repeat top center;
+    background: url("../img/application.svg") no-repeat top center;
     width: 23px;
     height: 23px;
+    background-size: 100%;
 }
 .wrap_map:before{
     content: '';
     position: absolute;
     left: 26px;
     top: 12px;
-    background: url("../img/map.png") no-repeat top center;
+    background: url("../img/map1.svg") no-repeat top center;
     width: 26px;
-    height: 22px;
+    height: 32px;
+    background-size: 100%;
+
 }
 .block1 {
     padding-bottom: 23px;
@@ -650,7 +654,7 @@ body{
     transition: 0.5s;
 }
 .f_nav li a:hover{
-    color: #004472;
+    color: #2497E3;
     transition: 0.5s;
 }
 .copy {
@@ -1304,15 +1308,19 @@ span.price p{
 }
 .ot{
     float: left;
+    width: 50%;
 }
 .do{
-    float: right;
+    float: left;
+    width: 50%;
 }
 .range-slider input{
     text-align: center;
     padding: 5px;
     font-size: 14px;
     color: #333;
+    width: 40%;
+    float: left;
 }
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
