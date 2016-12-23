@@ -1719,6 +1719,14 @@ a.blue-button:hover{
 }
 .describe_project{
     float: left;
+    width:66%;
+}
+.zag  img{
+    border: 1px solid #C2C8CE;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+
 }
 @media screen and (max-width: 1100px){
     .left_cont{
