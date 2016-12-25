@@ -1478,6 +1478,10 @@ a.blue-button:hover{
     background: #004472;
     color: white;
 }
+.block6 .pagination a.active{
+    background: #004472;
+    color: #ffffff;
+}
 .project_heading a.blue-button{
     clear: both;
 }
