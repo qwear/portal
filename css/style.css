@@ -275,6 +275,9 @@ body{
     margin-left: -551px;
     top: 60%;
 }
+.swiper-home.swiper-button-next,.swiper-home.swiper-button-prev{
+    margin-top: -21px;
+}
 .wrap_benefits{
     font-size: 0;
     padding-top: 25px;
@@ -826,6 +829,7 @@ a.all:hover{
     text-align: center;
     margin: 30px 0px;
 }
+
 .pagination a:hover{
     background-color: #000;
     color:#FFF;
@@ -2186,12 +2190,31 @@ a.blue-button:hover{
     }
 }
 @media only screen and (min-width:320px) and (max-width: 479px){
-    .wraper .container {
-        width:320px; margin:0 auto;
-        min-width: 320px;
+    .wraper .container{
+        width: initial;
+        min-width: initial;
+    }
+    .slick-slide img{
+        display:none;
+    }
+    .p_photo{
+        float: none;
+    }
+    .partner{
+        text-align: center;
+        height: 100px;
+    }
+    .bread_nav li a{
+        margin-left: 0px
+    }
+    .block5 .container{
+        padding: 0;
     }
     .wraper > div {
         min-width:320px;
+    }
+    .news_photo img{
+        margin-right: 20px;
     }
     .header {
         background: url(../img/head.png) no-repeat top center #004472;
@@ -2215,7 +2238,7 @@ a.blue-button:hover{
     }
     .input_one {
 
-        width: 95px;
+        width: 55px;
 
     }
     .wrap_search {
@@ -2225,7 +2248,7 @@ a.blue-button:hover{
         width: 100%;
     }
     .right_head a{
-        width: 70%;background: #004472;
+        width: 60%;background: #004472;
         padding: 9px 16px 14px 59px;
     }
     .slogan span {
@@ -2372,7 +2395,7 @@ a.blue-button:hover{
     }
     .right_cont {
         float: left;
-        width: 275px;
+        width: 100%;
         padding-top: 17px;
         margin-left: 10px;
     }
