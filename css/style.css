@@ -1485,6 +1485,9 @@ a.blue-button:hover{
 .project_heading a.blue-button{
     clear: both;
 }
+.error{
+    font-size: 13px;color: #ff0000;
+}
 .project_heading p{
     font-size: 18px;float: left;
     clear: both;
