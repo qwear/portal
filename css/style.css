@@ -1124,10 +1124,14 @@ a.all:hover{
 .right_cont main p , .left_cont main p{
     margin-bottom: 10px;
 }
+.left_cont main p.height{
+    height: 30px;
+}
 .left_cont main p{
     line-height: 30px;
     color: #333333;
     font-family: 'open sans', sans-serif;
+
 }
 .left_cont main .width{
     color: #004472;
