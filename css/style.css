@@ -294,7 +294,7 @@ body{
 .benefit{
     display: inline-block;
     vertical-align: top;
-    width: 200px;
+    width: 190px;
     margin: 0px 10px;
 }
 .benefit .b-link {
@@ -2510,6 +2510,9 @@ ul.module-section-list li a:before {
     }
     .examples-connections .banners .cell {
         width: 50%;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+        left:0;
     }
 }
 @media (max-width: 1124px){
