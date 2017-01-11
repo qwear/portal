@@ -1841,9 +1841,7 @@ h4{
     float: left;
     margin-bottom: 20px;
 }
-.col-md-4 img{
-    width: 100%;height: auto;
-}
+
 section.partner-industry h4{
     font-size: 14px;color: #333;
     font-weight: bold;padding-left: 15px;
@@ -2446,6 +2444,10 @@ section.main-numbers{
     margin-right: 20px;
     margin-bottom: 60px;
 }
+.industry-news .col-md-4 img{
+    width: 100%;
+    height: auto;
+}
 .examples-connections {
     background: #f8f8f8;
     padding-top: 50px;
@@ -2498,6 +2500,77 @@ ul.module-section-list li a:before {
 }
 .module-section-list a:hover:before {
     color: white;
+}
+
+.block10.general-state{
+    padding: 30px 0;
+}
+.general-state .title{
+    display: inline-block;
+    font-size: 14px;
+    color: #263876;
+    font-weight: bold;
+    margin: 10px 0 8px;
+}
+.general-state .intro{
+    font-size: 14px;
+    color: #333;
+}
+.general-state .row{
+    margin: 30px 0;
+}
+.general-state .pagination{
+    text-align: left;
+}
+.general-state .pagination a.active{
+    background: #004472;
+    color: white;
+}
+
+.block10.contact-page{
+    padding: 30px 0;
+}
+.contact-page .news-sidebar img,.contact-page .event-bar img,.news-example .news-sidebar img,.news-example .event-bar img{
+    width: 100%;height: auto;
+
+}
+.contact-page .event-bar h4{
+    margin-top: 30px;
+}
+.contact-page h4,.news-example h4{
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.contact-page .contact{
+    margin-bottom: 25px;
+}
+.contact-page .contact h4{
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.contact-page .contact p a{
+    color: #02A6D6;
+}
+.contact-page .contact p{
+    font-size: 14px;color: #333;
+    padding: 5px 0;
+}
+
+.block10.news-example{
+    padding: 30px 0;
+}
+.block10.news-example p{
+    color: #333;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.block10.news-example p img{
+    width: 100%;
+    height: auto;
+}
+.block10.news-example .zag{
+    text-align: left;
 }
 
 @media (max-width: 1024px){
@@ -2597,6 +2670,15 @@ ul.module-section-list li a:before {
     .tourism .industry-news .col-md-4{
         width: 100%;
     }
+    .general-state .col-md-4{
+        width: 100%;
+    }
+    .general-state .row{
+        margin: 0;
+    }
+    .contact-page .news-sidebar img,.contact-page .event-bar img{
+        width: 100%!important;height: auto;
+    }
 
 }
 @media (max-width: 800px){
@@ -2646,6 +2728,7 @@ ul.module-section-list li a:before {
     }
 }
 @media (max-width: 700px){
+
     .investment img.big-img-investment{
         display: none;
     }
@@ -2732,6 +2815,17 @@ ul.module-section-list li a:before {
             overflow: hidden;
             width: 50%;
         }
+}
+@media (max-width: 991px) {
+    .news-example .col-md-4{
+        margin-top: 25px;
+    }
+    .contact-page .col-md-4,.news-example .col-md-4,.contact-page .col-md-8,.news-example .col-md-8{
+        width: 100%;
+    }
+    .contact-page .news-sidebar img,.contact-page .event-bar img{
+        width: 50%;height: auto;
+    }
 }
 @media  (max-width:  780px){
    .economic-stats .table .cell {
