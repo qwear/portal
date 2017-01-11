@@ -554,3 +554,10 @@ button.swiper-pagination-bullet {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 1024px){
+   
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+        left:0;
+    }
+}
