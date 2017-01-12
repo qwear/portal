@@ -10,6 +10,9 @@ input,textarea{outline:none;}
 a,button,textarea{outline: none;cursor:pointer;}
 li{list-style:none;}
 button{background:none;border:none;	}
+html,body{
+    height: 100%;
+}
 * {
     margin:0;
     padding:0;
@@ -23,6 +26,10 @@ button{background:none;border:none;	}
 * {
     transition: background .5s;
     box-sizing: border-box;
+}
+.wraper{
+    position: relative;
+    min-height: 100%;
 }
 .wraper .container{
     max-width:1100px; margin:0 auto;
@@ -40,6 +47,9 @@ body{
 .header{
     background: url("../img/head.png") no-repeat top center;
     height: 69px;
+}
+.content{
+    padding-bottom: 90px;
 }
 .wrap_head{
     /*overflow: hidden;*/
@@ -598,7 +608,7 @@ body{
 .name_news{
     position: absolute;
     left: 0px;
-    bottom: 17px;
+    bottom: 26px;
     color: #ffffff;
     font-size: 13px;
     width: 140px;
@@ -614,6 +624,12 @@ body{
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+.footer-bottom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .footer{
     margin-top: 20px;
@@ -683,6 +699,7 @@ body{
 .zag_gamb{
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
 }
 .zeg1{
     margin-bottom:-30px;
@@ -1911,7 +1928,7 @@ section.partner-industry .col-md-3 img{
     background: #F8F8F8;
     padding: 50px 0;
 }
-.economic-stats .table .cell {
+.economic-stats .table .cell{
     width: 33.333%;
     padding: 25px;
     min-height: 155px;
@@ -1959,7 +1976,9 @@ section.partner-industry .col-md-3 img{
     margin: 40px 0 80px 0;
     position: relative;
 }
-
+.investment img{
+    width: 100%;
+}
 .investment .graphy .text {
     position: absolute;
     font-size: 13px;
@@ -1990,7 +2009,7 @@ section.partner-industry .col-md-3 img{
 }
 .main-numbers .block {
     float: left;
-    margin-left: 40px;
+    margin-left: 33px;
 }
 .main-numbers .block.block-1 {
     color: #2373b1;
@@ -2027,6 +2046,10 @@ section.main-numbers{
 }
 .about section.pad p{
     margin: 10px 0;
+}
+.about section.pad img{
+    width: 100%;
+    height: auto;
 }
 .big-map-about {
     background: #004472;
@@ -2240,7 +2263,7 @@ section.main-numbers{
 .big-cities .cities .city {
     float: left;
     text-align: center;
-    margin-left: 140px;
+    width: 20%;
 }
 .big-cities .cities .city:first-child {
     margin-left: 0;
@@ -2453,17 +2476,17 @@ section.main-numbers{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.examples-connections .banners .cell {
+.examples-connections .banners .cell,.contacts-item .item .cell  {
     width: 33.333%;
     box-sizing: border-box;
     padding-left: 30px;
     float: left;
     padding-bottom: 45px;
 }
-.examples-connections .banners {
+.examples-connections .banners,.contacts-item .banners {
     margin-left: -30px;
 }
-.examples-connections .banners .cell img{
+.examples-connections .banners .cell img,.contacts-item .item .cell img{
     width: 100%;height: auto;
 }
 .tourism .industry-news{
@@ -2530,29 +2553,29 @@ ul.module-section-list li a:before {
 .block10.contact-page{
     padding: 30px 0;
 }
-.contact-page .news-sidebar img,.contact-page .event-bar img,.news-example .news-sidebar img,.news-example .event-bar img{
+.contact-page .news-sidebar img,.contact-page .event-bar img,.news-example .news-sidebar img,.news-example .event-bar img,.overall-info .news-sidebar img,.overall-info .event-bar img{
     width: 100%;height: auto;
 
 }
 .contact-page .event-bar h4{
     margin-top: 30px;
 }
-.contact-page h4,.news-example h4{
+.contact-page h4,.news-example h4,.overall-info h4{
     padding: 0;
     margin-top: 20px;
     margin-bottom: 0;
 }
-.contact-page .contact{
+.contact-page .contact,.overall-info .info{
     margin-bottom: 25px;
 }
-.contact-page .contact h4{
+.contact-page .contact h4,.overall-info h4{
     margin-bottom: 15px;
     line-height: 20px;
 }
 .contact-page .contact p a{
     color: #02A6D6;
 }
-.contact-page .contact p{
+.contact-page .contact p,.overall-info .info p{
     font-size: 14px;color: #333;
     padding: 5px 0;
 }
@@ -2573,6 +2596,24 @@ ul.module-section-list li a:before {
     text-align: left;
 }
 
+.cooperation,.contacts-item{
+    padding: 30px 0;
+}
+.cooperation .examples-connections{
+    padding: 0;
+    background: none;
+}
+.cooperation .examples-connections .cell{
+    height: 220px;
+}
+
+.overall-info{
+    padding: 30px 0;
+}
+.contacts-item .item .cell .describe_g{
+    height: 30px;
+}
+
 @media (max-width: 1024px){
     .main-numbers .title{
         width: 100%;float: none;
@@ -2581,16 +2622,29 @@ ul.module-section-list li a:before {
         width: 45%;margin-left: 0;
         text-align: center;
     }
-    .examples-connections .banners .cell {
+    .examples-connections .banners .cell,.contacts-item .item .cell {
         width: 50%;
+    }
+    .contacts-item .item .cell .describe_g{
+        height: 50px;
     }
     .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
         left:0;
     }
+    .f_nav{
+        margin-left: 0;
+        padding-left: 0px;
+        float: right;
+    }
+    .copy{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
 }
 @media (max-width: 1124px){
     .main-numbers .block{
-        margin-left: 10px;
+        margin-left: -1px;
     }
 }
 @media (max-width: 1100px){
@@ -2606,6 +2660,12 @@ ul.module-section-list li a:before {
     }
     .a{
         width: 50%;
+    }
+    .contacts-item.cooperation .examples-connections .cell .describe_g span{
+        height: 30px;
+    }
+    .content{
+        padding-bottom: 160px;
     }
 }
 @media (max-width: 1050px) {
@@ -2676,12 +2736,15 @@ ul.module-section-list li a:before {
     .general-state .row{
         margin: 0;
     }
-    .contact-page .news-sidebar img,.contact-page .event-bar img{
+    .contact-page .news-sidebar img,.contact-page .event-bar img,.overall-info .news-sidebar img,.overall-info .event-bar img{
         width: 100%!important;height: auto;
     }
-
 }
 @media (max-width: 800px){
+    .big-cities .cities .city {
+        height: 150px;
+        width: 50%;
+    }
     .selhox-block .info {
         display: none;
     }
@@ -2820,10 +2883,10 @@ ul.module-section-list li a:before {
     .news-example .col-md-4{
         margin-top: 25px;
     }
-    .contact-page .col-md-4,.news-example .col-md-4,.contact-page .col-md-8,.news-example .col-md-8{
+    .contact-page .col-md-4,.news-example .col-md-4,.contact-page .col-md-8,.news-example .col-md-8,.overall-info .col-md-8,.overall-info .col-md-4{
         width: 100%;
     }
-    .contact-page .news-sidebar img,.contact-page .event-bar img{
+    .contact-page .news-sidebar img,.contact-page .event-bar img,.overall-info .news-sidebar img,.overall-info .event-bar img{
         width: 50%;height: auto;
     }
 }
@@ -2953,8 +3016,11 @@ ul.module-section-list li a:before {
         width: 50%;
         padding: 0 10px;
     }
-    .examples-connections .banners .cell {
+    .examples-connections .banners .cell,.contacts-item .item .cell  {
         width: 100%;
+    }
+    .contacts-item .item .cell .describe_g{
+        height: 0px;
     }
 }
 @media only screen and (min-width:1024px) and (max-width: 1099px){
@@ -3003,7 +3069,7 @@ ul.module-section-list li a:before {
     }
     .f_nav {
 
-        padding-left: 25px;
+        padding-left: 0px;
     }
     .swip_sec .swiper-pagination-bullets {
         left: auto!important;
@@ -3011,6 +3077,9 @@ ul.module-section-list li a:before {
         right: 20%!important;
         margin-right: 0px!important;
         bottom: 35px !important;
+    }
+    .copy{
+        margin-top: -50px;
     }
 
     .wrap_for_mess {
@@ -3160,7 +3229,6 @@ ul.module-section-list li a:before {
         font-size: 14px;
         line-height: 20px;
         padding-top: 16px;
-        margin-left: 67px;
     }
     .f_nav {
 
@@ -3334,7 +3402,6 @@ ul.module-section-list li a:before {
     .f_nav {
         float: left;
         padding-top: 25px;
-        padding-left: 52px;
     }
     .copy {
         float: none;
