@@ -2,14 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Проект</title>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <title>Инфраструктура для инвесторов</title>
+        
+        
 
         <link href="css/style.css" type="text/css" rel="stylesheet"/>
         <link href="css/flaticon.css" type="text/css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/swiper.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/show.js"></script>
+        <script src="js/ranger.js"></script>
 
     </head>
     <body>
@@ -34,8 +39,8 @@
                             <input class="button_first" type="submit" value=" " />
                         </div>
                         <div class="right_head">
-                            <a href="#" class="zayav">Заявка на размещение производства</a>
-                            <a href="#" class="wrap_map">Карта инвестиционных проектов края</a>
+                            <a href="quest.html" class="zayav">Заявка на размещение производства</a>
+                            <a href="http://map.stavinvest.ru/" class="wrap_map">Карта инвестиционных проектов края</a>
                         </div>
                     </div>
                 </div>
@@ -43,12 +48,14 @@
             <div class="block1">
                 <div class="container">
                     <div class="wrap_logo">
-                        <a href="#" class="logo"><img src="img/logo.png" alt=""/> </a>
-                        <a href=""> <div class="slogan">
-                            <p>ИНТЕРНЕТ-ПОРТАЛ<br/>
-                                ОБ ИНВЕСТИЦИОННОЙ ДЕЯТЕЛЬНОСТИ В</p>
-                            <span>СТАВРОПОЛЬСКОМ КРАЕ</span>
-                        </div></a>
+                        <a href="index.html" class="logo"><img src="img/logo.png" alt=""/> </a>
+                        <a href="index.html"> 
+                            <div class="slogan">
+                                <p>ИНТЕРНЕТ-ПОРТАЛ<br/>
+                                    ОБ ИНВЕСТИЦИОННОЙ ДЕЯТЕЛЬНОСТИ В</p>
+                                <span>СТАВРОПОЛЬСКОМ КРАЕ</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="right_block1">
                         <span class="free_phones">Телефон бесплатной<br/>
@@ -64,7 +71,16 @@
                 <div class="container">
                     <div class="breadcrumbs">
                         <span class="zag_gamb"><img src="img/gamb.png" alt=""></span>
-                        <span class="name_bread">Инвестиции</span>
+                        <div class="dropdown">
+                        <ul>
+                                        <li><a href="about.html">О Ставропольском крае</a></li>
+                                        <li><a href="investment.html">Господдержка инвесторов</a></li>
+                                        <li><a href="facilities-for-investors.html">Инфраструктура для инвесторов</a></li>
+                                        <li><a href="development.html">Инвестиционное развитие края</a></li>
+                                        <li><a href="economic.html">Отрасли экономики</a></li>
+                        </ul>
+                    </div>
+                        <span class="name_bread">ИНФРАСТРУКТУРА ДЛЯ ИНВЕСТОРОВ</span>
                     </div>
 
                 </div>
@@ -72,21 +88,19 @@
             <div class="block8">
                 <div class="container">
                     <ul class="nav">
-                        <li><a href="#">Поддержка инвестора</a></li>
-                        <li><a href="#">Памятка инвестора</a></li>
-                        <li><a href="#">Регламенты взаимодействия с органами власти</a></li>
-                        <li><a href="#">Инфраструктура для инвестора</a></li>
-                        <li><a href="#">Стратегии края</a></li>
-                        <li><a href="#">Инвестиционная декларация</a></li>
-                        <li><a href="#">Правовые акты</a></li>
-                        <li><a href="#">Координационный совет</a></li>
-                        <li><a href="#">Реестры</a></li>
-
+                        <li><a href="list.html">Региональные индустриальные парки</a></li>
+                        <li><a href="playground.html">Инвестиционные площадки</a></li>
+                        <li><a href="project-list.html">Инвестиционные проекты</a></li>
+                        <li><a href="#">План развития инфраструктуры</a></li>
+                        <li><a href="">Заключенные инвестиционные соглашения</a></li>
                     </ul>
                 </div>
             </div>
             <div class="block10 list">
                 <div class="container">
+                    <div class="list-pagination">
+                        <p><a href="index.html">Главная</a><span>></span><a href="facilities-for-investors.html">Инфраструктура для инвесторов</a><span>></span><a href="" class="active">Инвестиционные площадки</a></p>
+                    </div>
                     <div class="project_heading">
                         <div class="clear"></div>
                         <p><strong>Каталог инвестиционных площадок</strong></p>
@@ -107,23 +121,24 @@
                                 <option>Меню</option>
                             </select>
                             <span>Площадь, кв.м.</span>
-                            <div class="range-slider select">
-                                <span class="price">
-                                    <span class="clear"></span>
-                                    <div class="ot">
-                                        <p>от</p>
-                                        <input type="number" value="25000" min="0" max="120000"/>
-                                    </div>
-                                    <div class="do">
-                                        <p>до</p>
-                                        <input type="number" value="50000" min="0" max="120000"/>
-                                    </div>
-                                    <span class="clear"></span>
-                                </span>
-                                <input value="25000" min="0" max="120000" step="500" type="range"/>
-                                <input value="50000" min="0" max="120000" step="500" type="range"/>
-                                <svg width="100%" height="24"></svg>
-                            </div>
+                            <div class="range-slider">
+                                <span class="price"><span class="clear"></span>
+                                  <div class="ot">
+                                    <p>
+                                      от
+                                    </p>
+                                    <input id="by_cost_from" max="143300" min="0" name="by_cost[from]" type="number" value="0">
+                                  </div>
+                                  <div class="do">
+                                    <p>
+                                      до
+                                    </p>
+                                    <input id="by_cost_to" max="143300" min="0" name="by_cost[to]" type="number" value="143300">
+                                  </div>
+                                  <span class="clear"></span></span>
+                                  <input max="143300" min="0" step="1" type="range" value="0">
+                                  <input max="143300" min="0" step="1" type="range" value="143300">
+                                  <svg height="24" width="100%"></svg> </div>
                         </div>
                         <div class="col-md-4">
                             <span>Населёный пункт</span>
@@ -192,7 +207,7 @@
                                 <p><img src="img/49.png" alt=""/><strong>Вид разрешённого использования:</strong>Здесь написан тип разрш</p>
                             </div>
                             <span class="obnov">Последнее обновление: 21.11.2016</span>
-                            <a class="blue-button right" href="">Подробнее</a>
+                            <a class="blue-button right" href="area.html">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -207,9 +222,9 @@
                             <ul class="f_nav">
                                 <li><a href="#">Новости</a></li>
                                 <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Обратная связь</a></li>
+                                <li><a href="mail.html">Обратная связь</a></li>
                             </ul>
-                    <span class="copy">© 2014-2016 Портал Ставропольского края.<br/>
+                    <span class="copy">© 2014-2017 Портал Ставропольского края.<br/>
                     Все права защищены</span></a>
                     </div>
                 </div>
@@ -219,7 +234,5 @@
 
         <script src="js/swiper.js"></script>
         <script type="text/javascript" src="js/dev.js"></script>
-        <script src="js/ranger.js"></script>
-        <script src="js/show.js"></script>
     </body>
 </html>

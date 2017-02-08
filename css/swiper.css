@@ -18,6 +18,7 @@
   overflow: hidden;
   /* Fix of Webkit flickering */
   z-index: 1;
+  margin-bottom: 30px;
 }
 .swiper-container-no-flexbox .swiper-slide {
   float: left;
@@ -130,6 +131,10 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.swiper-container2 .swiper-button-prev,
+.swiper-container2 .swiper-button-next{
+  top: 92.5%;
+}
 @media only screen and (min-width:1200px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -145,7 +150,7 @@
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   background: url("../img/prev.png") no-repeat top center;
-    right: 50%;
+    right: 52%;
     margin-right: -410px !important;
 }
 .swiper-button-prev.swiper-button-black,
@@ -159,7 +164,7 @@
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   background: url("../img/next.png") no-repeat top center;
-    right: 50%;
+    right: 48%;
     left: auto;
     margin-right: -537px !important;
 }

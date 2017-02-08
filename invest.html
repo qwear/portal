@@ -2,8 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Инвестиции</title>
+        <title>Инфраструктура для инвесторов</title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/show.js"></script>
+        
         <link href="css/style.css" type="text/css" rel="stylesheet"/>
         <link href="css/flaticon.css" type="text/css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,8 +35,8 @@
                             <input class="button_first" type="submit" value=" " />
                         </div>
                         <div class="right_head">
-                            <a href="#" class="zayav">Заявка на размещение производства</a>
-                            <a href="#" class="wrap_map">Карта инвестиционных проектов края</a>
+                            <a href="quest.html" class="zayav">Заявка на размещение производства</a>
+                            <a href="http://map.stavinvest.ru/" class="wrap_map">Карта инвестиционных проектов края</a>
                         </div>
                     </div>
                 </div>
@@ -42,12 +44,14 @@
             <div class="block1">
                 <div class="container">
                     <div class="wrap_logo">
-                        <a href="#" class="logo"><img src="img/logo.png" alt=""/> </a>
-                        <a href=""> <div class="slogan">
-                            <p>ИНТЕРНЕТ-ПОРТАЛ<br/>
-                                ОБ ИНВЕСТИЦИОННОЙ ДЕЯТЕЛЬНОСТИ В</p>
-                            <span>СТАВРОПОЛЬСКОМ КРАЕ</span>
-                        </div></a>
+                        <a href="index.html" class="logo"><img src="img/logo.png" alt=""/> </a>
+            <a href="index.html"> 
+                <div class="slogan">
+                    <p>ИНТЕРНЕТ-ПОРТАЛ<br/>
+                        ОБ ИНВЕСТИЦИОННОЙ ДЕЯТЕЛЬНОСТИ В</p>
+                    <span>СТАВРОПОЛЬСКОМ КРАЕ</span>
+                </div>
+            </a>
                     </div>
                     <div class="right_block1">
                         <span class="free_phones">Телефон бесплатной<br/>
@@ -63,7 +67,16 @@
                 <div class="container">
                     <div class="breadcrumbs">
                         <span class="zag_gamb"><img src="img/gamb.png" alt=""/></span>
-                        <span class="name_bread">Инвестиции</span>
+                        <div class="dropdown">
+                        <ul>
+                                        <li><a href="about.html">О Ставропольском крае</a></li>
+                                        <li><a href="investment.html">Господдержка инвесторов</a></li>
+                                        <li><a href="facilities-for-investors.html">Инфраструктура для инвесторов</a></li>
+                                        <li><a href="development.html">Инвестиционное развитие края</a></li>
+                                        <li><a href="economic.html">Отрасли экономики</a></li>
+                        </ul>
+                    </div>
+                        <span class="name_bread">Инфраструктура для инвесторов</span>
                     </div>
                     
                 </div>
@@ -71,25 +84,23 @@
             <div class="block8">
                 <div class="container">
                     <ul class="nav">
-                        <li><a href="#">Поддержка инвестора</a></li>
-                        <li><a href="#">Памятка инвестора</a></li>
-                        <li><a href="#">Регламенты взаимодействия с органами власти</a></li>
-                        <li><a href="#">Инфраструктура для инвестора</a></li>
-                        <li><a href="#">Стратегии края</a></li>
-                        <li><a href="#">Инвестиционная декларация</a></li>
-                        <li><a href="#">Правовые акты</a></li>
-                        <li><a href="#">Координационный совет</a></li>
-                        <li><a href="#">Реестры</a></li>
-                       
+                        <li><a href="list.html">Региональные индустриальные парки</a></li>
+                        <li><a href="playground.html">Инвестиционные площадки</a></li>
+                        <li><a href="project-list.html">Инвестиционные проекты</a></li>
+                        <li><a href="#">План развития инфраструктуры</a></li>
+                        <li><a href="">Заключенные инвестиционные соглашения</a></li>
                     </ul>
                 </div>
             </div>
             <div class="block9">
                 <div class="container">
                     <div class="wrap_cont">
+                        <div class="list-pagination">
+                            <p><a href="index.html">Главная</a><span>></span><a href="facilities-for-investors.html">Инфраструктура для инвесторов</a><span>></span><a href="" class="active">Инвестиционные проекты</a></p>
+                        </div>
                         <div class="left_cont">
                             <h3 class="heading">Строительство гостевого дома «Казьминский»</h3>
-                            <div class="swiper-container">
+                            <div class="swiper-container swiper-container2">
                                 <div class="swiper-wrapper">
 
                                     <div class="swiper-slide" style="background:url(img/31.jpg) no-repeat top center;background-size: contain">
@@ -334,9 +345,9 @@
                             <ul class="f_nav">
                                 <li><a href="#">Новости</a></li>
                                 <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Обратная связь</a></li>
+                                <li><a href="mail.html">Обратная связь</a></li>
                             </ul>
-                    <span class="copy">© 2014-2016 Портал Ставропольского края.<br/>
+                    <span class="copy">© 2014-2017 Портал Ставропольского края.<br/>
                     Все права защищены</span></a>
                     </div>
                 </div>
@@ -345,6 +356,6 @@
 
         <script src="js/swiper.js"></script>
         <script type="text/javascript" src="js/dev.js"></script>
-        <script src="js/show.js"></script>
+
     </body>
 </html>

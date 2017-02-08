@@ -19,6 +19,21 @@
         spaceBetween: 0,
         loop: true,
         autoplay: 3500,
+        autoplayDisableOnInteraction: false,
+       
+    });
+
+    var swiper = new Swiper('.swiper-container2', {
+    	 width:1000,
+    	height:4000,
+    	pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: 3500,
         autoplayDisableOnInteraction: false
     });
 

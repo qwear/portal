@@ -1,46 +1,56 @@
+$(document).ready(function(){
 (function() {
+  var RangeFilter,
+    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-    var parent = document.querySelector(".select");
+  RangeFilter = (function() {
+    function RangeFilter(el) {
+      this.updateSlider = __bind(this.updateSlider, this);
+      this.setInput = __bind(this.setInput, this);
+      this.el = $(el);
+      this.from = $(".from", this.el);
+      this.to = $(".to", this.el);
+      this.min = this.from.data("value");
+      this.max = this.to.data("value");
+      this.slider = $(".init", this.el).ionRangeSlider({
+        min: this.min,
+        max: this.max,
+        from: this.from.val(),
+        to: this.to.val(),
+        type: 'double',
+        prefix: "$",
+        maxPostfix: "+",
+        prettify: false,
+        hasGrid: false,
+        gridMargin: 6,
+        onChange: this.setInput
+      });
+    }
 
-    if (!parent) return;
+    RangeFilter.prototype.setInput = function(slider) {
+      this.from.val(slider.fromNumber);
+      this.to.val(slider.toNumber);
+      this.to.trigger("change");
+      return this.from.trigger("change");
+    };
 
-    var
-        rangeS = parent.querySelectorAll("input[type=range]"),
-        numberS = parent.querySelectorAll("input[type=number]");
+    RangeFilter.prototype.updateSlider = function(ev) {
+      var opts, target;
+      target = $(ev.currentTarget);
+      opts = {};
+      opts[target.data("direction")] = target.val();
+      return this.slider.ionRangeSlider("update", opts);
+    };
 
-    rangeS.forEach(function(el) {
-        el.oninput = function() {
-            var slide1 = parseFloat(rangeS[0].value),
-                slide2 = parseFloat(rangeS[1].value);
+    return RangeFilter;
 
-            if (slide1 > slide2) {
-                [slide1, slide2] = [slide2, slide1];
-                // var tmp = slide2;
-                // slide2 = slide1;
-                // slide1 = tmp;
-            }
+  })();
 
-            numberS[0].value = slide1;
-            numberS[1].value = slide2;
-        }
-    });
+  window.addComponent(RangeFilter, {
+    className: "range-filter"
+  });
 
-    numberS.forEach(function(el) {
-        el.oninput = function() {
-            var number1 = parseFloat(numberS[0].value),
-                number2 = parseFloat(numberS[1].value);
-
-            if (number1 > number2) {
-                var tmp = number1;
-                numberS[0].value = number2;
-                numberS[1].value = tmp;
-            }
-
-            rangeS[0].value = number1;
-            rangeS[1].value = number2;
-
-        }
-    });
+}).call(this);
 
 
-})();
+});
