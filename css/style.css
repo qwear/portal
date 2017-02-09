@@ -32,7 +32,7 @@ html,body{
     position: relative;
     min-height: 100%;
 }
-.wraper .container{
+.container{
     max-width:1100px; margin:0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -322,6 +322,7 @@ body{
     line-height: 35px;
     position: absolute;
     left: 50%;
+    right: 15%;
     margin-left: -551px;
     top: 21%;
     background: rgba(0,68,114,0.7);
@@ -2436,6 +2437,7 @@ section.main-numbers{
     display: inline-block;
     border-radius: 40px;
 }
+
 .big-cities .cities .city {
     float: left;
     text-align: center;
@@ -2926,6 +2928,37 @@ ul.module-section-list li a:before {
 .quest .mini-2 .item input{
     width: 100%;
     box-sizing: border-box;
+}
+.property table{
+    border-collapse: collapse;
+}
+.property table tr{
+    padding: 0px;
+    margin: 0px;
+}
+.property table th{
+    text-align: left;
+}
+.property table td,.property table th{
+    padding: 25px 10px;
+    border: solid 1px #e5e5e5;
+}
+.property table tr:nth-child(odd) {
+    background: #f8f8f8;
+}
+.property table tr:nth-child(even) {
+    background: white;
+}
+
+.exemptions .item b{
+    color: #004472;
+    font-weight: bold;
+}
+.exemptions .item {
+    margin-bottom: 25px;
+}
+.exemptions .item .describe_g{
+    display: block;
 }
 @media (max-width: 1024px){
     .main-numbers .title{

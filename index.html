@@ -43,8 +43,12 @@
                             <a href="#"><i class="flaticon-vk"></i></a>
                         </div>
                         <div class="wrap_search">
-                            <input class="input_one" type="tel" placeholder="Поиск"  />
-                            <input class="button_first" type="submit" value=" " />
+                            <form accept-charset="UTF-8" action="/ru/search" class="layout-search" method="get">
+                                <div style="display:none">
+                                    <input name="utf8" type="hidden" value="✓">
+                                </div>
+                                <input class="input_one" name="query" placeholder="Поиск" type="text"><input class="button_first" type="submit" value=" ">
+                            </form>
                         </div>
                         <div class="right_head">
                             <a href="quest.html" class="zayav">Заявка на размещение производства</a>
