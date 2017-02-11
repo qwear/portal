@@ -42,6 +42,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 
 }
+p{
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+}
 .rob{
     font-family: 'Roboto', sans-serif;
 }
@@ -2803,6 +2808,7 @@ ul.module-section-list li a:before {
 
 .list-pagination{
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 .list-pagination p a{
     font-size: 14px;
